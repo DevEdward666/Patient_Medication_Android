@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/fragcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="478dp"
+        android:layout_marginBottom="55dp">
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        app:itemIconTint="@color/cardview_light_background"
+        app:itemTextColor="@color/colorHalfWhite"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_menu">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="28dp"
+            android:backgroundTint="@color/colorend"
+            android:baselineAlignBottom="true"
+            android:elevation="40dp"
+            android:foregroundGravity="top"
+            android:src="@drawable/ic_settings_overscan_black_24dp"
+            android:tint="@color/ic_pills_background"
+            app:backgroundTint="#1976D2"
+            app:fabSize="normal"
+            app:rippleColor="#C2185B" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

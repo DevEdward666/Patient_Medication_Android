@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/card_shape"
+    android:paddingStart="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <android.gesture.GestureOverlayView
+                        android:id="@+id/signing_pad"
+                        android:layout_width="match_parent"
+                        android:layout_height="500dp"
+                        android:background="#FFFFFF"
+                        android:fadeEnabled="false"
+                        android:fadeOffset="10000"
+                        android:gestureColor="#070707"
+                        android:gestureStrokeLengthThreshold="0.1"
+                        android:gestureStrokeType="multiple"
+                        android:orientation="vertical"
+                        android:uncertainGestureColor="@android:color/holo_red_light">
+
+                        <ImageView
+                            android:id="@+id/image_sign"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                    </android.gesture.GestureOverlayView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/choose_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:contentDescription="Choose a photo"
+            android:foregroundGravity="center"
+            app:backgroundTint="#11e00d"
+            app:maxImageSize="36dp"
+            app:srcCompat="@drawable/ic_baseline_add_a_photo_24" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginStart="55dp"
+            android:contentDescription="Choose a photo"
+            app:backgroundTint="#0d7ae0"
+            app:maxImageSize="36dp"
+            app:srcCompat="@drawable/ic_baseline_save_24" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/redraw_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:contentDescription="Choose a photo"
+            app:backgroundTint="#fc003f"
+            app:maxImageSize="36dp"
+            app:srcCompat="@drawable/ic_baseline_redo_24" />
+
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

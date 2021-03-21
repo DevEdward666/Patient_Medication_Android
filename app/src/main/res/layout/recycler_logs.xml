@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:hint="Patient Name"
+                        android:padding="10dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txt_patname_logs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:editable="false"
+                            android:enabled="false"
+                            android:fontFamily="@font/open_sans"
+                            android:lineSpacingExtra="10sp"
+                            android:textAlignment="viewStart"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:typeface="normal" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:hint="Stock Description"
+                            android:padding="10dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txt_stockdesc_logs"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:editable="false"
+                                android:enabled="false"
+                                android:fontFamily="@font/open_sans"
+                                android:lineSpacingExtra="10sp"
+                                android:textAlignment="viewStart"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:typeface="normal" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:hint="Qty"
+                            android:padding="10dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txt_qty_logs"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:editable="false"
+                                android:enabled="false"
+                                android:fontFamily="@font/open_sans"
+                                android:lineSpacingExtra="10sp"
+                                android:textAlignment="viewStart"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:typeface="normal" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:hint="Urgency"
+                        android:padding="10dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txt_urgency_logs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:editable="false"
+                            android:enabled="false"
+                            android:fontFamily="@font/open_sans"
+                            android:lineSpacingExtra="10sp"
+                            android:textAlignment="viewStart"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:typeface="normal" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:hint="Date Encoded"
+                        android:padding="10dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txt_encoded_logs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:editable="false"
+                            android:enabled="false"
+                            android:fontFamily="@font/open_sans"
+                            android:lineSpacingExtra="10sp"
+                            android:textAlignment="viewStart"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:typeface="normal" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</RelativeLayout>
